@@ -113,14 +113,12 @@ html {
   color: var(--very-dark-blackish-blue);
 } 
 
-
-/* @media screen and (min-width 780px) { */
-
-
-@media screen and (min-width: 1024px) {
-  span {
-    /* position: relative; */
-    display: none;
+@media screen and (min-width: 1440px) {
+  .card--img {
+    position: absolute;
+    left: 540px;
+    top: 90px;
+    opacity: 0.3;
   }
 
   .container {
