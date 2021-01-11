@@ -113,7 +113,11 @@ html {
   color: var(--very-dark-blackish-blue);
 } 
 
-@media screen and (min-width: 1440px) {
+
+/* @media screen and (min-width 780px) { */
+
+
+@media screen and (min-width: 1024px) {
   span {
     /* position: relative; */
     display: none;
