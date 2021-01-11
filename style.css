@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: var(--light-grayish-blue);
+}
+
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.container {
+  margin: 10px;
+}
+
+.container__card {
+  width: 100%;
+  padding: 19px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.card--img {
+  width: 100px;
+  height: 100px;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  opacity: 0.5;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+.container__card--header {
+  display: flex;
+  align-items: center;
+}
+
+.container__card--header img {
+  width: 35px;
+  height: 35px;
+  border-radius: 17px;
+  border: 2px solid #9c75d8;
+  margin: 5px;
+}
+
+.container__card--title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.container__card--verified {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.4;
+  color: var(--white);
+}
+
+.container__card--subtitle {
+  font-size: 2rem;
+  color: var(--white);
+  margin: 10px 0;
+}
+
+.container__card--review {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.card-violet {
+  background-color: var(--moderate-violet);
+}
+
+.card-gray {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card-white {
+  background-color: var(--white);
+}
+
+.card-white2 {
+  background-color: var(--white);
+}
+
+.card-blue {
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.card-text h2 {
+  color: var(--very-dark-blackish-blue);
+}
+
+.card-text h3 {
+  color: var(--very-dark-blackish-blue);
+} 
+
+.card-text p {
+  color: var(--very-dark-blackish-blue);
+} 
+
+@media screen and (min-width: 1440px) {
+  span {
+    /* position: relative; */
+    display: none;
+  }
+
+  .container {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    grid-template-rows: repeat(2, 270px);
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .container__card {
+    margin: 0;
+  }
+
+  .card-violet {
+    grid-column: 1 / span 2;
+  }
+
+  .card-blue {
+    grid-column: 2 / span 2;
+  }
+
+  .card-white2 {
+    grid-column: 4 / 5;
+    grid-row: 1 / span 2;
+  }
+}
