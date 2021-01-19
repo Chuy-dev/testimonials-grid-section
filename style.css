@@ -28,6 +28,7 @@ html {
   padding: 19px;
   border-radius: 5px;
   margin: 20px 0;
+  position: relative;
 }
 
 .card--img {
@@ -37,7 +38,7 @@ html {
   opacity: 0.5;
   position: absolute;
   right: 25px;
-  top: 20px;
+  top: 0px;
 }
 
 .container__card--header {
@@ -116,8 +117,8 @@ html {
 @media screen and (min-width: 1440px) {
   .card--img {
     position: absolute;
-    left: 540px;
-    top: 90px;
+    right: 41px;
+    top: 0;
     opacity: 0.3;
   }
 
